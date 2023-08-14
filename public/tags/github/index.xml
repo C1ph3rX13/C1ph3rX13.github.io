@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on C1ph3rX13 Blog</title>
+    <link>https://C1ph3rX13.github.io/tags/github/</link>
+    <description>Recent content in GitHub on C1ph3rX13 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Aug 2023 17:01:31 +0800</lastBuildDate><atom:link href="https://C1ph3rX13.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 4 Blog</title>
+      <link>https://C1ph3rX13.github.io/posts/2023-08-14/1/</link>
+      <pubDate>Mon, 14 Aug 2023 17:01:31 +0800</pubDate>
+      
+      <guid>https://C1ph3rX13.github.io/posts/2023-08-14/1/</guid>
+      <description>0x00 Blog Installation Hugo + Github Pages 0x01 Installation Github：https://github.com/gohugoio/hugo Windows Wiki：https://gohugo.io/installation/windows/ zozo：ht</description>
+    </item>
+    
+  </channel>
+</rss>

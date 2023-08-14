@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on C1ph3rX13 Blog</title>
+    <link>https://C1ph3rX13.github.io/tags/</link>
+    <description>Recent content in Tags on C1ph3rX13 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Aug 2023 17:01:31 +0800</lastBuildDate><atom:link href="https://C1ph3rX13.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>https://C1ph3rX13.github.io/tags/github/</link>
+      <pubDate>Mon, 14 Aug 2023 17:01:31 +0800</pubDate>
+      
+      <guid>https://C1ph3rX13.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://C1ph3rX13.github.io/tags/hugo/</link>
+      <pubDate>Mon, 14 Aug 2023 17:01:31 +0800</pubDate>
+      
+      <guid>https://C1ph3rX13.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
