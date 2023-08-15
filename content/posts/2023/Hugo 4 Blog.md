@@ -61,5 +61,5 @@ hugo --theme=zozo --baseUrl="https://C1ph3rX13.github.io" --buildDrafts
 
 Setting - Pages - Build and deployment - Souurce - GitHub Actions - Hugo Configs
 
-![image-20230815145247463](./../../../static/images/Hugo%204%20Blog/image-20230815145247463.png)
+![image-20230815145247463](https://raw.githubusercontent.com/C1ph3rX13/C1ph3rX13.github.io/main/static/images/Hugo%204%20Blog/image-20230815145247463.png)
 
