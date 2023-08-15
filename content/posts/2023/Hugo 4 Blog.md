@@ -13,7 +13,7 @@ Hugo + Github Pages
 
 自建博客记录以及配置信息
 
-### 0x01 Installation
+## 0x01 Installation
 
 ### Hugo 框架
 
