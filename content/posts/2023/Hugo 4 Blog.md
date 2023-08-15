@@ -2,7 +2,6 @@
 title: "Hugo 4 Blog"
 date: 2023-08-14T17:01:31+08:00
 draft: false
-description: "Blog Installation"
 url: /posts/2023-08-14/1
 tags: ["Hugo","GitHub"]
 ---
@@ -63,3 +62,10 @@ Setting - Pages - Build and deployment - Souurce - GitHub Actions - Hugo Configs
 
 ![image-20230815145247463](https://raw.githubusercontent.com/C1ph3rX13/C1ph3rX13.github.io/main/static/images/Hugo%204%20Blog/image-20230815145247463.png)
 
+## 0x04 图床问题
+
+### PicGo
+
+使用PicGo作为图床，把图片文件都上传到固定仓库的固定文件夹，但是不能按照文章分类图片
+
+暂时使用GitHub作为图床保存图片
