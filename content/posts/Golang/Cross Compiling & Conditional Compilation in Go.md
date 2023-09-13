@@ -74,7 +74,7 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -trimpath -o <
 
 1. 空格隔开的选项是或（OR）的关系
 2. 逗号隔开的选项是与（AND）的关系
-3. 每个选项由字母和数字组成。如果前面加上!，则表示反义
+3. 每个选项由字母和数字组成。如果前面加上`!`，则表示反义
 
 ```go
 // +build darwin freebsd netbsd openbsd
@@ -101,7 +101,15 @@ package main
 
 `go/build`包的文档有关于命名约定的描述。简单来说，如果文件名包含`_$GOOS.go`后缀，那么这个源码文件只会在对应的平台被编译。其他平台会忽略这个文件。另一种约定是`_$GOARCH.go`
 
-这两种后缀可以组合起来，但要保证顺序正确，正确的格式是`_$GOOS_$GOARCH.go`，错误的格式是`_$GOARCH_$GOOS.go`
+这两种后缀可以组合起来，但要保证顺序正确：
+
+```go
+// 正确的格式
+_$GOOS_$GOARCH.go
+
+// 错误的格式
+_$GOARCH_$GOOS.go
+```
 
 以下是文件名后缀的一些例子：
 
