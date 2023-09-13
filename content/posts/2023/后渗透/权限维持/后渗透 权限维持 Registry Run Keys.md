@@ -3,14 +3,14 @@ title: "后渗透 权限维持 Registry Run Keys"
 date: 2023-09-13T17:15:29+08:00
 draft: false
 url: /posts/2023-09-13/Registry-Run-Keys
-tags: ["后渗透","权限维持","Windows"]
+tags: ["后渗透","权限维持","Registry Run Keys","Windows"]
 ---
 
 ## 0x00 前言
 
 后渗透 权限维持 Registry Run Keys
 
-0x01 Registry Run Keys
+## 0x01 Registry Run Keys
 
 ### 开始菜单启动项
 
