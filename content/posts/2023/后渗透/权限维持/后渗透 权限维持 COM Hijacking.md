@@ -2,7 +2,7 @@
 title: "后渗透 权限维持 COM 劫持"
 date: 2023-09-13T16:32:30+08:00
 draft: false
-url: /posts/2023-09-13/COM Hijacking
+url: /posts/2023-09-13/COM-Hijacking
 tags: ["后渗透","权限维持","COM 劫持","Windows"]
 ---
 
