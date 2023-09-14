@@ -1,5 +1,5 @@
 ---
-title: "后渗透 权限维持 更改默认文件关联"
+title: "后渗透 权限维持 Change Default File Association"
 date: 2023-09-13T16:32:30+08:00
 draft: false
 url: /posts/2023-09-13/Change-Default-File-Association
