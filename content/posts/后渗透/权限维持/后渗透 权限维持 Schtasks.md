@@ -195,7 +195,7 @@ schtasks /Query /tn OnLogOff /fo List /v
 
 **SD**：Security Descriptor 安全描述符，在Windows中，每一个安全对象实体都拥有一个安全描述符，安全描述符包含了被保护对象相关联的安全信息的数据结构，它的作用主要是为了给操作系统提供判断来访对象的权限
 
-**经测试：Windows 7 、Windows Server 2008 无 SD 值、Windows 10 有 SD 值**
+**Windows 7 、Windows Server 2008 无 SD 值、Windows 10 有 SD 值**
 
 ## 0x05 隐藏姿势
 
@@ -239,5 +239,5 @@ del /f /s /q %SystemRoot%\System32\Tasks\<Filename>
 
 这样操作，无论何种方式 (排除注册表) 都查不到该任务，较为彻底。因为 SD 就是安全描述符，它的作用主要是为了给操作系统提供判断来访对象的权限，但被删除后，无法判断用户是否有权限查看该任务信息，导致系统直接判断无权限查看。因此在使用 `schtasks /query /tn \Microsoft\Windows\AppID\<Task Name>` 查询时，提示“错误: 系统找不到指定的文件”
 
-**经测试，Windows 7 、Windows Server 2008 无 SD 值、Windows 10 有 SD 值**
+**Windows 7 、Windows Server 2008 无 SD 值、Windows 10 有 SD 值**
 
