@@ -171,3 +171,73 @@ schtasks /Create /TN OnLogOff /TR "cmd.exe /c start /b <path to executable>" /SC
 schtasks /Query /tn OnLogOff /fo List /v
 ```
 
+## 0x03 XML 文件
+
+计划任务一旦创建成功，将会自动在 `%SystemRoot%\System32\Tasks` 目录生成一个关于该任务的描述性 XML 文件，包含了所有的任务信息
+
+## 0x04 注册表
+
+在 Windows 7，计划任务注册表路径为
+
+```powershell
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\
+```
+
+在 Windows 10，计划任务注册表路径为
+
+```powershell
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\
+```
+
+**Id**：{GUID}，任务对应的guid编号
+
+**Index**：一般任务值为3，其他值未知
+
+**SD**：Security Descriptor 安全描述符，在Windows中，每一个安全对象实体都拥有一个安全描述符，安全描述符包含了被保护对象相关联的安全信息的数据结构，它的作用主要是为了给操作系统提供判断来访对象的权限
+
+**经测试：Windows 7 、Windows Server 2008 无 SD 值、Windows 10 有 SD 值**
+
+## 0x05 隐藏姿势
+
+### 非完全隐藏
+
+非完全隐藏一个计划任务，通过修改 `\Schedule\TaskCache\Tree` 下对应任务的 Index 值，一般情况下值为 3 。
+
+#### Index 修改
+
+- 修改 `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\{TaskName}` 下对应任务的 Index 值为 0
+
++ Windows 10 为例，新建计划任务 `cmd` 的高级安全设置中所有者为 SYSTEM，默认无法更改注册表键值
+
++ 更改所有者为 Administrators，并赋予完全控制权限，才能修改注册表键值
++ 当 Index 修改为 0 后， 利用 `taskschd.msc`、`schtasks.exe` 、甚至系统API查询出的所有任务中，都查看不到所创建的任务。但如果知道该任务名称，可以通过 `schtasks /query /tn {TaskName Path}` 查到
++ 但在 Windows Server 2008 与 Windows 7 中，修改 Index 键值为 0 ，任务计划程序中仍存在该任务，原因未知
+
+#### XML 文件删除
+
+- 删除 `%SystemRoot%\System32\Tasks` 下任务对应的 XML 文件
+
+```cmd
+del /f /s /q %SystemRoot%\System32\Tasks\<Filename>
+```
+
+1. 在 Windows 10 中，删除 XML 文件，并不影响计划任务的运行，且在 `taskschd.msc` 任务计划程序中，依然存在对应任务
+2. 在 Windows 7 与 Windows Server 2008 中，若删除 XML 文件，任务计划程序中的对应任务也会被删除，并且影响计划任务的运行，但注册表中项值依然存在
+
+### 完全隐藏
+
+#### SD 删除
+
+- 删除 `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\{TaskName}\SD`
+- 删除 `%SystemRoot%\System32\Tasks` 下任务对应的 XML 文件
+
+```cmd
+reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\{TaskName}\SD" /f
+
+del /f /s /q %SystemRoot%\System32\Tasks\<Filename>
+```
+
+这样操作，无论何种方式 (排除注册表) 都查不到该任务，较为彻底。因为 SD 就是安全描述符，它的作用主要是为了给操作系统提供判断来访对象的权限，但被删除后，无法判断用户是否有权限查看该任务信息，导致系统直接判断无权限查看。因此在使用 `schtasks /query /tn \Microsoft\Windows\AppID\<Task Name>` 查询时，提示“错误: 系统找不到指定的文件”
+
+**经测试，Windows 7 、Windows Server 2008 无 SD 值、Windows 10 有 SD 值**
+
