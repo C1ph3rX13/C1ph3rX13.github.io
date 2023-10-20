@@ -12,10 +12,10 @@ tags: ["Python","httpx","requests"]
 
 ```python
 url = target + f'/media/xpack/../replay/'
-		# 第一中请求方式
-        resp = client.request(url=eurl, timeout=5, method='Get')
-        # 第二种请求方式
-        resp = client.get(url=url, timeout=5)
+    # 第一种请求方式
+    resp = client.request(url=eurl, timeout=5, method='Get')
+    # 第二种请求方式
+    resp = client.get(url=url, timeout=5)
         
 # Url Output
 '/media/xpack/replay/'
@@ -68,7 +68,7 @@ print(r.status)
 
 ### Downgrading urllib3
 
-+ 降级requests 或 urllib3
++ 降级 requests 或 urllib3
 
 + pip install urllib3==1.24.3
 
