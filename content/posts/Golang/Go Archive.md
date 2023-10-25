@@ -29,7 +29,7 @@ defer tarFile.Close()
 使用 `tar.NewWriter()` 函数创建一个新的 `tar.Writer`，将tar文件和相应的写入流关联起来
 
 ```go
-tarWriter := tar.NewWriter(file)
+tarWriter := tar.NewWriter(tarFile)
 defer tarWriter.Close()
 ```
 
