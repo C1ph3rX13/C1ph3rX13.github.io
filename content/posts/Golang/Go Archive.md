@@ -149,8 +149,7 @@ type Header struct {
 ### 创建gzip.Writer
 
 ```go
-	// 创建gzip.Writer
-    gzipWriter := gzip.NewWriter(gzFile)
+	gzipWriter := gzip.NewWriter(gzFile)
     defer gzipWriter.Close()
 ```
 
