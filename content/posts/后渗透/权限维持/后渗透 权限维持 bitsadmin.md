@@ -1,9 +1,9 @@
 ---
-title: "后渗透 权限维持 bitsadmin"
+title: "后渗透 权限维持 Bitsadmin"
 date: 2023-09-13T16:32:30+08:00
 draft: false
-url: /posts/2023-09-13/bitsadmin
-tags: ["后渗透","权限维持","bitsadmin","Windows"]
+url: /posts/2023-09-13/Bitsadmin
+tags: ["后渗透","权限维持","Bitsadmin","Windows"]
 ---
 
 ## 0x00 前言

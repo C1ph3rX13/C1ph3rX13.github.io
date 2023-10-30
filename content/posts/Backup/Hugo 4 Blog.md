@@ -2,7 +2,7 @@
 title: "Hugo 4 Blog"
 date: 2023-08-14T17:01:31+08:00
 draft: false
-url: /posts/2023-08-14/1
+url: /posts/2023-08-14/Hugo-4-Blog
 tags: ["Hugo","GitHub"]
 ---
 
