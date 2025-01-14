@@ -69,8 +69,8 @@ nav:
 # 主题设置
 theme:
   name: material
-  logo: Static/logo.png
-  favicon: Static/favicon.ico
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   features:
     - search.highlight
     - navigation.tracking
