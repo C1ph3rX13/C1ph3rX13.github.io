@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./Static/logo.png" alt="C1ph3rX13" width="128" />
+  <img src="./assets/logo.png" alt="C1ph3rX13" width="128" />
   <br>
   <a href="https://github.com/C1ph3rX13" target="_blank">C1ph3rX13</a> Blogs
   <br>
