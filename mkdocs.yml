@@ -1,9 +1,9 @@
 site_name: C1ph3rx13
-repo_name: c1ph3rx13.github.io
+repo_name: C1ph3rx13.github.io
 site_description: C1ph3rx13
-repo_url: https://c1ph3rx13.github.io/
+repo_url: https://github.com/C1ph3rX13/C1ph3rX13.github.io
 copyright: Copyright &copy 2025 C1ph3rx13
-edit_uri: https://github.com/C1ph3rX13/c1ph3rX13.github.io
+edit_uri: https://github.com/C1ph3rX13/C1ph3rX13.github.io/tree/main/docs
 
 # 禁用路由导航方式
 use_directory_urls: false
@@ -58,6 +58,7 @@ nav:
   - Docker: 
       - Docker CP Files: Docker/Docker CP Files.md
       - Dockerfile Parser: Docker/Dockerfile Parser.md
+      - Using Debian repo to install Docker Engine on Kali: Docker/Using Debian repo to install Docker Engine on Kali.md
   - Blogs:
       - Blogs: Blogs.md
   - Tools:
