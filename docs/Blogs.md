@@ -1,30 +1,21 @@
 ## Blogs
 
-###   Red Team
+### Red Team
 
-[HackTricks](https://book.hacktricks.xyz)
-
-[XPN's InfoSec Blog](https://blog.xpnsec.com)
-
-[Quarkslab's blog](https://blog.quarkslab.com)
-
-[FourCore](https://fourcore.io/blogs)
-
-[ShenTouShi Command](https://book.shentoushi.top)
-
-[WADComs](https://wadcoms.github.io)
-
-[Capt. Meelo](https://captmeelo.com)
-
-[Red Team Guides](https://book.redteamguides.com)
-
-[vx-underground](https://vx-underground.org)
-
-[CodeX's Terminal Window](https://codex-7.gitbook.io/codexs-terminal-window)
-
-[Pentester's Promiscuous Notebook](https://ppn.snovvcrash.rocks)
-
-[Red Team Notes](https://www.ired.team)
+| Name                             | URL                                               | Type     |
+| -------------------------------- | ------------------------------------------------- | -------- |
+| HackTricks                       | https://book.hacktricks.xyz                       | Red Team |
+| XPN's InfoSec Blog               | https://blog.xpnsec.com                           | Red Team |
+| Quarkslab's blog                 | https://blog.quarkslab.com                        | Red Team |
+| FourCore                         | https://fourcore.io/blogs                         | Red Team |
+| ShenTouShi Command               | https://book.shentoushi.top                       | Red Team |
+| WADComs                          | https://wadcoms.github.io                         | Red Team |
+| Capt. Meelo                      | https://captmeelo.com                             | Red Team |
+| Red Team Guides                  | https://book.redteamguides.com                    | Red Team |
+| vx-underground                   | https://vx-underground.org                        | Red Team |
+| CodeX's Terminal Window          | https://codex-7.gitbook.io/codexs-terminal-window | Red Team |
+| Pentester's Promiscuous Notebook | https://ppn.snovvcrash.rocks                      | Red Team |
+| Red Team Notes                   | https://www.ired.team                             | Red Team |
 
 ### Blue Team
 

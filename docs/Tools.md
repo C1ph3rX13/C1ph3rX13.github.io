@@ -15,8 +15,6 @@
 | ---------------- | ----------------------------------------------------- | ------------------------------- |
 | Curlconverte     | https://curlconverter.com                             | Convert curl commands to code   |
 | googlechromelabs | https://googlechromelabs.github.io/chrome-for-testing | Chrome for Testing availability |
-|                  |                                                       |                                 |
-|                  |                                                       |                                 |
 
 ## Rust
 
@@ -25,7 +23,6 @@
 | Rust        | https://www.rust-lang.org/        | Official |
 | Rust Course | https://course.rs/about-book.html | Book     |
 | RsProxy     | https://rsproxy.cn                | Proxy    |
-|             |                                   |          |
 
 ## Windows The Undocumented Functions
 
@@ -34,7 +31,6 @@
 | undocumented-ntinternals | https://undocumented-ntinternals.github.io | 内核函数参数查询                  |
 | undocumented.ntinternals | http://undocumented.ntinternals.net        | 内核函数参数查询                  |
 | vergiliusproject         | https://www.vergiliusproject.com           | 内核结构体查询                    |
-|                          |                                            |                                   |
 
 ## Windows X86-64 System Call Table
 
@@ -43,7 +39,6 @@
 | vexillium    | https://j00ru.vexillium.org/syscalls/nt/64          |                              |
 | processhacke | https://processhacker.sourceforge.io/doc/index.html |                              |
 | ntdoc        | https://ntdoc.m417z.com                             |                              |
-|              |                                                     |                              |
 
 ## Living Off The Land Binaries, Scripts and Libraries
 
@@ -51,8 +46,6 @@
 | -------- | --------------------------------- | ---- |
 | lolbas   | https://lolbas-project.github.io/ |      |
 | gtfobins | https://gtfobins.github.io/       |      |
-|          |                                   |      |
-|          |                                   |      |
 
 ## IDEs
 
