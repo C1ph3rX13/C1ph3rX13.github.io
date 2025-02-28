@@ -42,10 +42,25 @@
 
 ## Living Off The Land Binaries, Scripts and Libraries
 
-| Name     | URL                               | Type |
-| -------- | --------------------------------- | ---- |
-| lolbas   | https://lolbas-project.github.io/ |      |
-| gtfobins | https://gtfobins.github.io/       |      |
+| Name     | URL                               | Type    |
+| -------- | --------------------------------- | ------- |
+| lolbas   | https://lolbas-project.github.io/ | Windows |
+| gtfobins | https://gtfobins.github.io/       | Linux   |
+
+## SandBox
+
+| Name                      | URL                                          | Type                    |
+| ------------------------- | -------------------------------------------- | ----------------------- |
+| hybrid-analysis           | https://www.hybrid-analysis.com/             | Malware Sample Database |
+| MalwareBazaar             | https://bazaar.abuse.ch/                     | Malware Sample Database |
+| malwaretech               | https://malwaretech.com/                     | Papers                  |
+| VirusSign                 | https://www.virussign.com/                   | Malware Sample Database |
+| VirusSign/malware-samples | https://github.com/VirusSign/malware-samples | Github                  |
+| ViriList                  | http://vxvault.net/ViriList.php              | Malware Sample Database |
+| Malware Traffic Analysis  | https://www.malware-traffic-analysis.net/    | Malware Sample Database |
+| AnyRun                    | https://app.any.run/                         |                         |
+| zeltser.com               | https://zeltser.com/malware-sample-sources/  | Blogs                   |
+| TheZoo                    | https://thezoo.morirt.com/                   | Malware Sample Database |
 
 ## IDEs
 

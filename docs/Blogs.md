@@ -16,19 +16,20 @@
 | CodeX's Terminal Window          | https://codex-7.gitbook.io/codexs-terminal-window | Red Team |
 | Pentester's Promiscuous Notebook | https://ppn.snovvcrash.rocks                      | Red Team |
 | Red Team Notes                   | https://www.ired.team                             | Red Team |
+| hackerium.io                     | https://wiki.hackerium.io/                        | Red Team |
+| Nigerald's blog                  | https://dtsec.us/                                 | Red Team |
 
 ### Blue Team
 
-[Blue Team Guides](https://book.blueteamguides.com)
+| Name             | URL                             | Type      |
+| ---------------- | ------------------------------- | --------- |
+| Blue Team Guides | https://book.blueteamguides.com | Blue Team |
 
 ### Malware development
 
-[0xPat blog](https://0xpat.github.io)
-
-[scriptchildie | Golang](https://www.scriptchildie.com)
-
-[Anti-Debug Tricks](https://anti-debug.checkpoint.com)
-
-[Maldevacademy](https://web.archive.org/web/20240531034645/https://cmn.cool/docs/Maldevacademy)
-
-[Nigerald's blog | HTB WP](https://dtsec.us)
+| Name              | URL                                                          | Type   |
+| ----------------- | ------------------------------------------------------------ | ------ |
+| 0xPat blog        | https://0xpat.github.io/                                     |        |
+| scriptchildie     | https://www.scriptchildie.com/                               | Golang |
+| Anti-Debug Tricks | https://anti-debug.checkpoint.com/                           |        |
+| Maldevacademy     | https://web.archive.org/web/20240531034645/https://cmn.cool/docs/Maldevacademy | C/C++  |
