@@ -62,6 +62,15 @@
 | zeltser.com               | https://zeltser.com/malware-sample-sources/  | Blogs                   |
 | TheZoo                    | https://thezoo.morirt.com/                   | Malware Sample Database |
 
+## Terminal
+
+| Name                         | URL                                                        | Type |
+| ---------------------------- | ---------------------------------------------------------- | ---- |
+| tabby                        | https://github.com/Eugeny/tabby/                           | All  |
+| MobaXterm-Chinese-Simplified | https://github.com/RipplePiam/MobaXterm-Chinese-Simplified | All  |
+| WindTerm                     | https://github.com/kingToolbox/WindTerm                    | All  |
+| Warp                         | https://github.com/warpdotdev/Warp                         | All  |
+
 ## IDEs
 
 https://3.jetbra.in/

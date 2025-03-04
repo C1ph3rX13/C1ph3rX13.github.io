@@ -1,4 +1,4 @@
-## Using Debian repo to install Docker Engine on Kali
+## Using Repo to install Docker Engine on Kali
 
 ### [Install Docker Engine on Debian](https://docs.docker.com/engine/install/debian/)
 
@@ -137,6 +137,18 @@ echo -e "[+] Installation Complete"
    sudo rm /etc/apt/keyrings/docker.asc
    ```
 
+4. Auto Remove
+
+   ```bash
+   #!/bin/bash
+   
+   apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras -y
+   rm -rf /var/lib/docker
+   rm -rf /var/lib/containerd
+   rm -rf /etc/apt/sources.list.d/docker.list
+   rm -rf /etc/apt/keyrings/docker.asc
+   ```
+
 ### Use a proxy server with the Docker CLI
 
 #### [Configure the Docker client](https://docs.docker.com/engine/cli/proxy/#configure-the-docker-client)
@@ -196,5 +208,37 @@ systemctl restart docker
 
 # Verify that the configuration has been loaded and matches the changes you made, for example
 systemctl show --property=Environment docker
+```
+
+### Using Ubuntu Repo
+
+```bash
+#!/bin/bash
+# 卸载冲突包（可选）
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do
+     apt-get remove $pkg -y
+done
+
+# 添加Docker官方GPG密钥
+ apt-get update
+ apt-get install -y ca-certificates curl
+ install -m 0755 -d /etc/apt/keyrings
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+ chmod a+r /etc/apt/keyrings/docker.asc
+
+# 添加APT源（手动指定版本代号，例如 jammy）
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu jammy stable" | \
+   tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# 安装指定版本（手动指定版本字符串）
+ apt-get update
+VERSION_STRING="5:20.10.24~3-0~ubuntu-jammy"  # 这里直接写死
+ apt-get install -y \
+    docker-ce=$VERSION_STRING \
+    docker-ce-cli=$VERSION_STRING \
+    containerd.io \
+    docker-buildx-plugin \
+    docker-compose-plugin
 ```
 

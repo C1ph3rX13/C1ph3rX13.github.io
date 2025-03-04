@@ -58,7 +58,7 @@ nav:
   - Docker: 
       - Docker CP Files: Docker/Docker CP Files.md
       - Dockerfile Parser: Docker/Dockerfile Parser.md
-      - Using Debian repo to install Docker Engine on Kali: Docker/Using Debian repo to install Docker Engine on Kali.md
+      - Using Repo to install Docker Engine on Kali: Docker/Using Repo to install Docker Engine on Kali.md
   - Blogs:
       - Blogs: Blogs.md
   - Tools:
