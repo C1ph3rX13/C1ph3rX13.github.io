@@ -76,6 +76,8 @@
 
 https://3.jetbra.in/
 
+https://softwareupdate.vmware.com/cds/vmw-desktop/ws/
+
 ## Password
 
 https://www.nirsoft.net/password_recovery_tools.html

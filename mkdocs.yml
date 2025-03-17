@@ -8,65 +8,6 @@ edit_uri: https://github.com/C1ph3rX13/C1ph3rX13.github.io/tree/main/docs
 # 禁用路由导航方式
 use_directory_urls: false
 
-# 导航设置
-nav:
-  - Home:
-      - Me: index.md
-  - ReadTeam:
-      - Windows:
-        - Active Directory:
-          - Windows Information Gathering: ReadTeam/Windows/Active Directory/Windows Information Gathering.md
-          - BloodHound: ReadTeam/Windows/Active Directory/BloodHound.md
-          - Lateral Movement: ReadTeam/Windows/Active Directory/Lateral Movement.md
-          - Multi-layer Proxy: ReadTeam/Windows/Active Directory/Multi-layer Proxy.md
-        - Persistence:
-          - Persistence AddMonitor: ReadTeam/Windows/Persistence/Persistence AddMonitor.md
-          - Persistence Bitsadmin: ReadTeam/Windows/Persistence/Persistence Bitsadmin.md
-          - Persistence Change Default File Association: ReadTeam/Windows/Persistence/Persistence Change Default File Association.md
-          - Persistence COM Hijacking: ReadTeam/Windows/Persistence/Persistence COM Hijacking.md
-          - Persistence DLL Hijacking: ReadTeam/Windows/Persistence/Persistence DLL Hijacking.md
-          - Persistence Hide: ReadTeam/Windows/Persistence/Persistence Hide.md
-          - Persistence Image File Execution Options: ReadTeam/Windows/Persistence/Persistence Image File Execution Options.md
-          - Persistence Netsh Helper DLL: ReadTeam/Windows/Persistence/Persistence Netsh Helper DLL.md
-          - Persistence New Service: ReadTeam/Windows/Persistence/Persistence New Service.md
-          - Persistence Office Templates: ReadTeam/Windows/Persistence/Persistence Office Templates.md
-          - Persistence PowerShell Profile: ReadTeam/Windows/Persistence/Persistence PowerShell Profile.md
-          - Persistence Registry Run Keys: ReadTeam/Windows/Persistence/Persistence Registry Run Keys.md
-          - Persistence Schtasks: ReadTeam/Windows/Persistence/Persistence Schtasks.md
-          - Persistence Screensaver: ReadTeam/Windows/Persistence/Persistence Screensaver.md
-          - Persistence Time Providers: ReadTeam/Windows/Persistence/Persistence Time Providers.md
-          - Persistence Winlogon Helper: ReadTeam/Windows/Persistence/Persistence Winlogon Helper.md
-          - Persistence WMI: ReadTeam/Windows/Persistence/Persistence WMI.md
-        - Others:
-          - Removal: ReadTeam/Windows/Removal.md
-          - Windows Code Execution: ReadTeam/Windows/Windows Code Execution.md
-      - Linux:
-        - Linux Information Gathering: ReadTeam/Linux/Linux Information Gathering.md
-  - Golang:
-      - Building a dll with Go: Golang/Building a dll with Go.md
-      - Cross Compiling & Conditional Compilation in Go: Golang/Cross Compiling & Conditional Compilation in Go.md
-      - Go Archive: Golang/Go Archive.md
-      - Go-Resty Transport: Golang/Go-Resty Transport.md
-      - Go-Winres: Golang/Go-Winres.md
-      - Selenium Config Golang: Golang/Selenium Config Golang.md
-      - The low-level Operating System Primitives: Golang/The low-level Operating System Primitives.md
-  - Python:
-      - Path Traversal Vulnerabilities with Python: Python/Path Traversal Vulnerabilities with Python.md
-      - Selenium Config Python: Python/Selenium Config Python.md
-  - C++:
-      - C&C++ Hide CMD: C++/C&C++ Hide CMD.md
-  - Docker: 
-      - Docker CP Files: Docker/Docker CP Files.md
-      - Dockerfile Parser: Docker/Dockerfile Parser.md
-      - Using Repo to install Docker Engine on Kali: Docker/Using Repo to install Docker Engine on Kali.md
-  - Blogs:
-      - Blogs: Blogs.md
-  - Tools:
-      - Tools: Tools.md
-  - Backup:
-      - Hugo 4 Blog: Backup/Hugo 4 Blog.md
-      - Browser Plugins.md: Backup/Browser Plugins.md
-
 # 主题设置
 theme:
   name: material
@@ -76,6 +17,7 @@ theme:
     - search.highlight
     - navigation.tracking
     - navigation.instant
+    - navigation.instant.progress
     - navigation.expand
     - navigation.path
     - navigation.indexes
@@ -130,6 +72,9 @@ markdown_extensions:
 plugins:
   - search:
       separator: '[\s\u200b\-]'
+  - awesome-pages:
+      collapse_single_pages: true
+      strict: false
 
 extra:
   generator: false # 去除页脚广告

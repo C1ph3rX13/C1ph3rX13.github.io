@@ -2,3 +2,4 @@
 mkdocs-material
 # Chinese text segmentation library
 jieba
+mkdocs-awesome-pages-plugin
