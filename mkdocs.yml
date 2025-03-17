@@ -6,7 +6,7 @@ copyright: Copyright &copy 2025 C1ph3rx13
 edit_uri: https://github.com/C1ph3rX13/C1ph3rX13.github.io/tree/main/docs
 
 # 禁用路由导航方式
-use_directory_urls: false
+# use_directory_urls: false
 
 # 主题设置
 theme:
