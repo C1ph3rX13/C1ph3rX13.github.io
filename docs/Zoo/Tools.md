@@ -62,6 +62,8 @@
 | zeltser.com               | https://zeltser.com/malware-sample-sources/  | Blogs                   |
 | TheZoo                    | https://thezoo.morirt.com/                   | Malware Sample Database |
 | Vmray                     | https://www.vmray.com/                       | Sandbox                 |
+| contagiodump              | http://contagiodump.blogspot.com             | Malware Sample Database |
+|                           |                                              |                         |
 
 ## Terminal
 
@@ -72,12 +74,35 @@
 | WindTerm                     | https://github.com/kingToolbox/WindTerm                    | All  |
 | Warp                         | https://github.com/warpdotdev/Warp                         | All  |
 
-## IDEs
+## Fonts
 
-https://3.jetbra.in/
+| Name         |                                                              | Type   |
+| ------------ | ------------------------------------------------------------ | ------ |
+| maple-font   | https://github.com/subframe7536/maple-font                   | Coding |
+| maple-font   | https://font.subf.dev/zh-cn/                                 | Coding |
+| 中文网字计划 | https://chinese-font.netlify.app/zh-cn/fonts/maple-mono-cn/MapleMono-CN-Regular | zh-cn  |
 
-https://softwareupdate.vmware.com/cds/vmw-desktop/ws/
+## PPA
+
+https://launchpad.net/~ondrej
+
+## Remove Paywalls
+
+| Name          | URL                                                   | Type      |
+| ------------- | ----------------------------------------------------- | --------- |
+| removepaywall | https://www.removepaywall.com/                        | Articles  |
+| paywallbuster | https://paywallbuster.com/                            | Paywalls  |
+| jetbra.in     | https://3.jetbra.in/                                  | JetBrains |
+| Vmware        | https://softwareupdate.vmware.com/cds/vmw-desktop/ws/ | VMware    |
 
 ## Password
 
 https://www.nirsoft.net/password_recovery_tools.html
+
+## IPinfo
+
+| Name              | URL                            | Type  |
+| ----------------- | ------------------------------ | ----- |
+| ping.pe           | https://ping.pe/               | WHOIS |
+| whatismyipaddress | https://whatismyipaddress.com/ | LOCAL |
+

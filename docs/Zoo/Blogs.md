@@ -18,6 +18,7 @@
 | Red Team Notes                   | https://www.ired.team                             | Red Team |
 | hackerium.io                     | https://wiki.hackerium.io/                        | Red Team |
 | Nigerald's blog                  | https://dtsec.us/                                 | Red Team |
+| Red Team Notes 2.0               | https://dmcxblue.gitbook.io/red-team-notes-2-0    | Red Team |
 
 ### Blue Team
 
@@ -33,3 +34,11 @@
 | scriptchildie     | https://www.scriptchildie.com/                               | Golang |
 | Anti-Debug Tricks | https://anti-debug.checkpoint.com/                           |        |
 | Maldevacademy     | https://web.archive.org/web/20240531034645/https://cmn.cool/docs/Maldevacademy | C/C++  |
+
+### Reverse
+
+| Name                        | URL                                                        | Type   |
+| --------------------------- | ---------------------------------------------------------- | ------ |
+| reverse-engineering         | https://github.com/wtsxDev/reverse-engineering             | Github |
+| awesome-reverse-engineering | https://github.com/alphaSeclab/awesome-reverse-engineering | Github |
+

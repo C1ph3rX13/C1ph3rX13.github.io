@@ -1,34 +1,22 @@
-## 渗透测试
+## Google Chrome
 
-Hack-Tools
+| Name                            | URL                                                          | Type                |
+| ------------------------------- | ------------------------------------------------------------ | ------------------- |
+| Hack-Tools                      | https://chromewebstore.google.com/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi | Red Team            |
+| HackBar                         | https://chromewebstore.google.com/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc | Red Team            |
+| OWASP Penetration Testing Kit   | https://chromewebstore.google.com/detail/owasp-penetration-testing/ojkchikaholjmcnefhjlbohackpeeknd | Red Team            |
+| Mitaka                          | https://github.com/ninoseki/mitaka                           | Red Team            |
+| FindSomething                   | https://chromewebstore.google.com/detail/findsomething/kfhniponecokdefffkpagipffdefeldb | JavaScript          |
+| Heimdallr                       | https://github.com/Ghr07h/Heimdallr                          | Honeypot            |
+| Wappalyzer                      | https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg | Technology Profiler |
+| Cookie-Editor                   | https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm | Cookie Editor       |
+| User-Agent Switcher and Manager | https://chromewebstore.google.com/detail/user-agent-switcher-and-m/bhchdcejhohfmigjafbampogmaanbfkg | User-Agent          |
+| SmartProxy                      | https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj | Proxy               |
+| FoxyProxy                       | https://chromewebstore.google.com/detail/foxyproxy/gcknhkkoolaabfmlnjonogaaifnjlfnp | Proxy               |
+| FeHelper                        | https://chromewebstore.google.com/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad |                     |
+| WebRTC Protect                  | https://chromewebstore.google.com/detail/webrtc-protect-protect-ip/bkmmlbllpjdpgcgdohbaghfaecnddhni | WebRTC              |
 
-HackBar
 
-FindSomething
 
-### 蜜罐、指纹识别
 
-Heimdallr
-
-Wappalyzer - Technology profiler
-
-### Cookies 管理
-
-Cookie-Editor
-
-### 浏览器自动化
-
-Selenium IDE
-
-## 代理
-
-Proxy SwitchyOmega
-
-User-Agent Switcher and Manager
-
-## 前端
-
-FeHelper(前端助手)
-
-网页编码修改(Charset)
 
