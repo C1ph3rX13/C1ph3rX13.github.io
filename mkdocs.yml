@@ -13,6 +13,9 @@ theme:
   name: material
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  font:
+    text: "Maple Mono CN"
+    code: "Maple Mono CN"
   features:
     - search.highlight
     - navigation.tracking
@@ -83,3 +86,6 @@ extra:
       link: https://github.com/C1ph3rX13
     - icon: material/file-document
       link: https://github.com/C1ph3rX13
+
+extra_css:
+  - "https://chinese-fonts-cdn.deno.dev/packages/maple-mono-cn/dist/MapleMono-CN-Regular/result.css"
