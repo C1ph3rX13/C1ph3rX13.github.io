@@ -119,35 +119,35 @@ echo -e "[+] Installation Complete"
 
 1. Uninstall the Docker Engine, CLI, containerd, and Docker Compose packages:
 
-   ```bash
-   sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
-   ```
+```bash
+sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
+```
 
 2. Images, containers, volumes, or custom configuration files on your host aren't automatically removed. To delete all images, containers, and volumes:
 
-   ```bash
-   sudo rm -rf /var/lib/docker
-   sudo rm -rf /var/lib/containerd
-   ```
+```bash
+sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+```
 
 3. Remove source list and keyrings
 
-   ```bash
-   sudo rm /etc/apt/sources.list.d/docker.list
-   sudo rm /etc/apt/keyrings/docker.asc
-   ```
+```bash
+sudo rm /etc/apt/sources.list.d/docker.list
+sudo rm /etc/apt/keyrings/docker.asc
+```
 
 4. Auto Remove
 
-   ```bash
-   #!/bin/bash
-   
-   apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras -y
-   rm -rf /var/lib/docker
-   rm -rf /var/lib/containerd
-   rm -rf /etc/apt/sources.list.d/docker.list
-   rm -rf /etc/apt/keyrings/docker.asc
-   ```
+```bash
+#!/bin/bash
+
+apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras -y
+rm -rf /var/lib/docker
+rm -rf /var/lib/containerd
+rm -rf /etc/apt/sources.list.d/docker.list
+rm -rf /etc/apt/keyrings/docker.asc
+```
 
 ### Use a proxy server with the Docker CLI
 
