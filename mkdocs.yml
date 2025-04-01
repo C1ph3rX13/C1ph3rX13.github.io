@@ -16,6 +16,9 @@ theme:
   font:
     text: "Maple Mono CN"
     code: "Maple Mono CN"
+    features:
+      - "liga"  # 启用连字
+      - "calt"  # 启用上下文替代
   features:
     - search.highlight
     - navigation.tracking
@@ -30,6 +33,11 @@ theme:
     - toc.follow
     - content.action.edit
     - content.code.copy
+    - content.tables
+    - content.tables.scroll  # 横向滚动
+    - content.tables.hover   # 悬停高亮
+    - content.tables.sort    # 列排序（Material 8.0+）
+
   # 亮色/深色模式
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -71,6 +79,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.mark  # 支持表格内标记文本（如荧光笔效果）
+  - pymdownx.caret  # 支持上标/下标
 
 plugins:
   - search:
