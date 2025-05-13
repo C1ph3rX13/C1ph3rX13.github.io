@@ -94,6 +94,7 @@ https://launchpad.net/~ondrej
 | paywallbuster | https://paywallbuster.com/                            | Paywalls  |
 | jetbra.in     | https://3.jetbra.in/                                  | JetBrains |
 | Vmware        | https://softwareupdate.vmware.com/cds/vmw-desktop/ws/ | VMware    |
+| Vmware Tools  | https://packages.vmware.com/tools/releases/           | VMware    |
 
 ## Password
 

@@ -42,3 +42,34 @@
 | reverse-engineering         | https://github.com/wtsxDev/reverse-engineering             | Github |
 | awesome-reverse-engineering | https://github.com/alphaSeclab/awesome-reverse-engineering | Github |
 
+### LLM Security
+
+| Name              | URL                                                 | Type    |
+| ----------------- | --------------------------------------------------- | ------- |
+| LLM Security      | https://llmsecurity.net/                            | Paper   |
+| LLM Security      | https://github.com/corca-ai/awesome-llm-security    | Paper   |
+| LLM Guard         | https://llm-guard.com/                              | Toolkit |
+| LLM SECURITY 2024 | https://github.com/GURPREETKAURJETHRA/LLM-SECURITY  | Paper   |
+| garak             | https://github.com/NVIDIA/garak                     | Toolkit |
+| garak             | https://docs.garak.ai/                              | Doc     |
+| LLM4Cybersecurity | https://github.com/tmylla/Awesome-LLM4Cybersecurity | Paper   |
+| LLM Safety        | https://github.com/ydyjya/Awesome-LLM-Safety        | Paper   |
+| Agentic Security  | https://github.com/msoedov/agentic_security         | Toolkit |
+| PyRIT             | https://github.com/Azure/PyRIT                      | LLM     |
+
+### Active Directory
+
+| Name                | URL                                 | Type                      |
+| ------------------- | ----------------------------------- | ------------------------- |
+| The Hacker Recipes  | https://www.thehacker.recipes/      | Active Directory          |
+| The Hacker Toolkits | https://Toolkits.thehacker.recipes/ | Active Directory Toolkits |
+| ADSecurity          | https://adsecurity.org/             | Active Directory          |
+| WindowsTechno       | https://windowstechno.com/          | Active Directory          |
+
+## Awesome
+
+| Name    | URL                                                     | Type    |
+| ------- | ------------------------------------------------------- | ------- |
+| Awesome | https://github.com/sindresorhus/awesome                 | All     |
+| Windows | https://github.com/marcosValle/awesome-windows-red-team | Windows |
+
