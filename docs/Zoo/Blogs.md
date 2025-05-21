@@ -1,6 +1,4 @@
-## Blogs
-
-### Red Team
+## Red Team
 
 | Name                             | URL                                               | Type       |
 | -------------------------------- | ------------------------------------------------- | ---------- |
@@ -21,13 +19,13 @@
 | Red Team Notes 2.0               | https://dmcxblue.gitbook.io/red-team-notes-2-0    | Red Team   |
 | Powershell Commands              | https://powershellcommands.com/                   | Powershell |
 
-### Blue Team
+## Blue Team
 
 | Name             | URL                             | Type      |
 | ---------------- | ------------------------------- | --------- |
 | Blue Team Guides | https://book.blueteamguides.com | Blue Team |
 
-### Malware development
+## Malware development
 
 | Name              | URL                                                          | Type   |
 | ----------------- | ------------------------------------------------------------ | ------ |
@@ -36,14 +34,14 @@
 | Anti-Debug Tricks | https://anti-debug.checkpoint.com/                           |        |
 | Maldevacademy     | https://web.archive.org/web/20240531034645/https://cmn.cool/docs/Maldevacademy | C/C++  |
 
-### Reverse
+## Reverse
 
 | Name                        | URL                                                        | Type   |
 | --------------------------- | ---------------------------------------------------------- | ------ |
 | reverse-engineering         | https://github.com/wtsxDev/reverse-engineering             | Github |
 | awesome-reverse-engineering | https://github.com/alphaSeclab/awesome-reverse-engineering | Github |
 
-### LLM Security
+## LLM Security
 
 | Name              | URL                                                 | Type    |
 | ----------------- | --------------------------------------------------- | ------- |
@@ -57,8 +55,9 @@
 | LLM Safety        | https://github.com/ydyjya/Awesome-LLM-Safety        | Paper   |
 | Agentic Security  | https://github.com/msoedov/agentic_security         | Toolkit |
 | PyRIT             | https://github.com/Azure/PyRIT                      | LLM     |
+|                   | https://workik.com/ai-penetration-testing           |         |
 
-### Active Directory
+## Active Directory
 
 | Name                | URL                                 | Type                      |
 | ------------------- | ----------------------------------- | ------------------------- |
@@ -73,4 +72,11 @@
 | ------- | ------------------------------------------------------- | ------- |
 | Awesome | https://github.com/sindresorhus/awesome                 | All     |
 | Windows | https://github.com/marcosValle/awesome-windows-red-team | Windows |
+
+## AI Penetration
+
+| Name       | URL                                       | Type |
+| ---------- | ----------------------------------------- | ---- |
+| workik     | https://workik.com/ai-penetration-testing | Free |
+| PentestGPT | https://pentestgpt.ai/login               |      |
 

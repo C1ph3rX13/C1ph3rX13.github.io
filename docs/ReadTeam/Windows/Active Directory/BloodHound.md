@@ -79,7 +79,7 @@ You can view the source code for SharpHound and build it from source by visiting
 
 [BloodHound | Github](https://github.com/SpecterOps/BloodHound)
 
-[BloodHound | Support](https://support.bloodhoundenterprise.io/hc/en-us)
+[BloodHound | Support](https://bloodhound.specterops.io/home)
 
 ### Docker Compose
 
@@ -170,7 +170,7 @@ services:
       start_period: 30s
 
   graph-db:
-    image: docker.io/library/neo4j:4.4
+    image: docker.io/library/neo4j:4.4.42
     environment:
       - NEO4J_AUTH=${NEO4J_USER:-neo4j}/${NEO4J_SECRET:-bloodhoundcommunityedition}
       - NEO4J_dbms_allow__upgrade=${NEO4J_ALLOW_UPGRADE:-true}
@@ -199,6 +199,8 @@ services:
       - bhe_graph_query_memory_limit=${bhe_graph_query_memory_limit:-2}
       - bhe_database_connection=user=${POSTGRES_USER:-bloodhound} password=${POSTGRES_PASSWORD:-bloodhoundcommunityedition} dbname=${POSTGRES_DB:-bloodhound} host=app-db
       - bhe_neo4j_connection=neo4j://${NEO4J_USER:-neo4j}:${NEO4J_SECRET:-bloodhoundcommunityedition}@graph-db:7687/
+      - bhe_recreate_default_admin=${bhe_recreate_default_admin:-false}
+      - bhe_graph_driver=${GRAPH_DRIVER:-neo4j}
       ### Add additional environment variables you wish to use here.
       ### For common configuration options that you might want to use environment variables for, see `.env.example`
       ### example: bhe_database_connection=${bhe_database_connection}
@@ -222,4 +224,5 @@ services:
 volumes:
   neo4j-data:
   postgres-data:
+
 ```
