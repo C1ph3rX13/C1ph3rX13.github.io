@@ -118,6 +118,8 @@ docker compose pull && docker compose up .
 
 docker compose up -d
 docker compose logs
+# Find Initial Password
+docker compose logs | grep "Initial Password"
 ```
 
 1. In a browser, navigate to http://localhost:8080/ui/login. Login with the username `admin` and the randomly generated password from the logs.
@@ -224,5 +226,4 @@ services:
 volumes:
   neo4j-data:
   postgres-data:
-
 ```

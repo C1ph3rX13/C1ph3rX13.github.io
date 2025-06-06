@@ -18,6 +18,8 @@
 | Nigerald's blog                  | https://dtsec.us/                                 | Red Team   |
 | Red Team Notes 2.0               | https://dmcxblue.gitbook.io/red-team-notes-2-0    | Red Team   |
 | Powershell Commands              | https://powershellcommands.com/                   | Powershell |
+| Shenanigans Labs                 | https://shenaniganslabs.io/                       | Red Team   |
+| harmj0y                          | https://blog.harmj0y.net/                         | Red Team   |
 
 ## Blue Team
 

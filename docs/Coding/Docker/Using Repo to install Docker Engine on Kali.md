@@ -197,8 +197,9 @@ touch /etc/systemd/system/docker.service.d/proxy.conf
 # Multiple environment variables can be set; to set both a non-HTTPS and a HTTPs proxy
 tee /etc/systemd/system/docker.service.d/proxy.conf <<EOF
 [Service]
-Environment="HTTP_PROXY=http://proxy.example.com:7897"
-Environment="HTTPS_PROXY=https://proxy.example.com:7897"
+Environment="HTTP_PROXY=http://ip:port"
+Environment="HTTPS_PROXY=http://ip:port"
+# Environment="HTTPS_PROXY=https://ip:port"
 Environment="NO_PROXY=localhost,127.0.0.1,.example.com"
 EOF
 
