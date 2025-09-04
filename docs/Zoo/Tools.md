@@ -31,6 +31,7 @@
 | undocumented-ntinternals | https://undocumented-ntinternals.github.io | 内核函数参数查询                  |
 | undocumented.ntinternals | http://undocumented.ntinternals.net        | 内核函数参数查询                  |
 | vergiliusproject         | https://www.vergiliusproject.com           | 内核结构体查询                    |
+| terminus                 | http://terminus.rewolf.pl/terminus/        | 内核结构体查询                    |
 
 ## Windows X86-64 System Call Table
 
@@ -63,7 +64,6 @@
 | TheZoo                    | https://thezoo.morirt.com/                   | Malware Sample Database |
 | Vmray                     | https://www.vmray.com/                       | Sandbox                 |
 | contagiodump              | http://contagiodump.blogspot.com             | Malware Sample Database |
-|                           |                                              |                         |
 
 ## Terminal
 
